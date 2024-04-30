@@ -6,7 +6,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
       <div>
        <TopNav/>
       </div>
-      <div>{children}</div>
+      <div className="px-4">{children}</div>
     </div>
   );
 }

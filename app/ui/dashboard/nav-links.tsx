@@ -15,14 +15,14 @@ const links = [
 
 export default function NavLinks() {
   return (
-    <>
+    <div className="flex gap-7">
       {links.map((link) => {
         return (
           <Link key={link.name} href={link.href}>
-            <p>{link.name}</p>
+            <p className="text-xl">{link.name}</p>
           </Link>
         );
       })}
-    </>
+    </div>
   );
 }
